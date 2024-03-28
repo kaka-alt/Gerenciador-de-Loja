@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="page">
-        <form method="post" class="formLogin">
+        <form  action="{% url 'cadastramento' %}" method="POST" class="formLogin"> {% csrf_token%}
             <h1>Cadastro</h1>
             <p>bernardo gostoso seus dados para se Cadastrar</p>
             <label for="nome">Nome</label>
